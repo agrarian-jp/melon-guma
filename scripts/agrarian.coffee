@@ -10,7 +10,7 @@
 #
 # Author:
 # MaxMEllon
-# https://github.com/MaxMEllon/AlterEgo/blob/master/scripts/nico-info.coffee
+# https://github.com/MaxMEllon/melon-guma/blob/master/scripts/agrarian.coffee
 
 module.exports = (robot) ->
   robot.respond /agrarian help/i, (msg) ->
