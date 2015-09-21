@@ -13,6 +13,12 @@
 # https://github.com/MaxMEllon/melon-guma/blob/master/scripts/agrarian.coffee
 
 module.exports = (robot) ->
+  robot.hear /\+|\+1|いいね|すごい|gj|guma/i, (msg) ->
+    msg.send ':guma:'
+
+  robot.hear /(.*)$/i, (msg) ->
+    msg.send ':guma:' if Math.random() < 0.05
+
   robot.respond /agrarian help/i, (msg) ->
     msg.send 'agrarian enemy `id` : 敵情報'
     msg.send 'agrarian player `id` : プレイヤー情報'
